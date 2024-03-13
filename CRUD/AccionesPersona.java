@@ -15,7 +15,7 @@ public class AccionesPersona {
     }
 
     //registrar
-    public void agregarPersona(Personap){
+    public void agregarPersona(Persona p){
         listaPersonas.add(p);
     }
     
@@ -23,7 +23,7 @@ public class AccionesPersona {
     public Persona buscarPersona(int id){
         Persona encontrada = new Persona();
         
-        for(Personap: listaPersonas){
+        for(Persona p: listaPersonas){
             if(id == p.getId()){
                 encontrada = p;
             }else{
@@ -37,7 +37,7 @@ public class AccionesPersona {
 
     //actualizar
     public void actualizarPersona(Persona actualizada){
-        Persona actualizar = buscarPersonas(actualizada.getId());
+        Persona actualizar = buscarPersona (actualizada.getId());
         listaPersonas.remove(actualizar);
         listaPersonas.add(actualizar);
     }

@@ -3,6 +3,8 @@ public class Persona{
 private int id;
 private String Nombre;
 private int edad;
+
+
 public Persona(){
    }
 public Persona (int id, String nombre, int edad){
@@ -28,4 +30,6 @@ return edad;
 public void setEdad(int Edad){
 this.edad = Edad;
 }
+
+
 }
